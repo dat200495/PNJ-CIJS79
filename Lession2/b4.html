@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-add" >
+            <form method="post" onsubmit="return addBnt();">
+                <input required type="text" id="name" placeholder="Tên">
+                <input required type="text" id="phone" placeholder="Số điện thoại">
+                <input type="submit" id="add-bnt" value="THÊM">    
+            </form>
+        </div>
+        <div class="container-srch">
+            <input type="text" placeholder="Tìm kiếm" class="find-bnt">
+            <input type="button" class="srch-bnt" value="TÌM" onclick="srchBnt()">
+            <input type="button" class="del-bnt" value="XOÁ TRÙNG" onclick="delBnt()">
+        </div>
+        <div class="container-list">
+            <table id="list-contact">
+                
+            </table>
+        </div>
+    </div>
+    <script src="./b4.js"></script>
+</body>
+</html>
