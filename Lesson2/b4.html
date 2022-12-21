@@ -9,16 +9,16 @@
 <body>
     <div class="container">
         <div class="container-add" >
-            <form method="post" onsubmit="return addBnt();">
+            <form method="post">
                 <input required type="text" id="name" placeholder="Tên">
                 <input required type="text" id="phone" placeholder="Số điện thoại">
-                <input type="submit" id="add-bnt" value="THÊM">    
+                <input type="button" id="add-bnt" value="THÊM" onclick="addBnt()">    
             </form>
         </div>
         <div class="container-srch">
-            <input type="text" placeholder="Tìm kiếm" class="find-bnt">
+            <input type="text" placeholder="Tìm kiếm" id="find-bnt">
             <input type="button" class="srch-bnt" value="TÌM" onclick="srchBnt()">
-            <input type="button" class="del-bnt" value="XOÁ TRÙNG" onclick="delBnt()">
+            <input type="button" id="del-bnt" value="XOÁ TRÙNG" onclick="delBnt()">
         </div>
         <div class="container-list">
             <table id="list-contact">
