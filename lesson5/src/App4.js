@@ -14,9 +14,9 @@ const App4 = () => {
         <div>
       <button onClick={reW}> Next</button>
       <div>
-        <div className={a === "red" ? "red" : ""}>Red</div>
-        <div className={a === "yellow" ? "yellow" : ""}>Yellow</div>
-        <div className={a === "green" ? "green" : ""}>Green</div>
+        <button className={a === "red" ? "red" : ""}></button>
+        <button className={a === "yellow" ? "yellow" : ""}></button>
+        <button className={a === "green" ? "green" : ""}></button>
       </div>
     </div>
     );
